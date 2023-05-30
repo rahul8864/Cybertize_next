@@ -1,0 +1,94 @@
+.sideContainer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.sideContainerInner {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.mainIcon {
+    width: 127px;
+    height: 126px;
+}
+
+.dashboard {
+    background: #FFFFFF;
+    border: 1px solid #0099FB;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 11px;
+    margin-top: 30px;
+}
+
+.dashIcon {
+    width: 19px;
+    height: 19px;
+}
+.dashText {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #0099FB;
+    margin-left: 15px;
+}
+
+.menuNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 42px;
+}
+
+.menuList {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.downIcon {
+    height: 12px;
+}
+
+.leftSide {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.leftSideIcon {
+    width: 18px;
+    height: 18px;
+}
+
+.leftSideText {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #878787;
+}
+
+.logout {
+    height: 48px;
+    background: #007AFF;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.logout > span{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}

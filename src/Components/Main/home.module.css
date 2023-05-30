@@ -1,0 +1,268 @@
+.mainContainer {
+    background: #f5f6fa;
+    border-radius: 55px 0px 0px 55px;
+    width: 100%;
+    height: 100%;
+    padding: 47px;
+}
+.searchContainer, .dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchBox {
+    width: 508px;
+    height: 42px;
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    padding: 11px 0px 11px 20px;
+}
+.seachIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 11px;
+}
+.inputBox {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 11px;
+}
+.inputBox::placeholder {
+    color: #d3d3d3;
+}
+
+.userSide {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+}
+
+.commentImg {
+    width: 36px;
+    height: 36px;
+}
+
+.userImg {
+    width: 50px;
+    height: 50px;
+}
+.arrowDownImg {
+    width: 28.83px;
+    height: 18.25px;
+}
+
+.dashboard {
+    margin-top: 30px;
+}
+
+.dashboardText {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 500;
+}
+
+.reportExport {
+    display: flex;
+    gap: 18px;
+}
+
+.report {
+    width: 171px;
+    height: 42px;
+    background: #fafafa;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.good {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.goodText {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #878787;
+}
+
+.goodIcon {
+    width: 24px;
+    height: 24px;
+    margin-left: 7px;
+}
+
+.box {
+    width: 202px;
+    height: 109px;
+    position: relative;
+}
+
+.customer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 13px;
+}
+.nameText {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+.valueText {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+}
+
+.box2 {
+    background: #d8effe;
+    border-radius: 10px;
+    transform: rotate(-29.08deg);
+    width: 53.86px;
+    height: 45.19px;
+}
+
+.box3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.userIcon {
+    width: 23px;
+    height: 23px;
+    transform: rotate(29deg);
+}
+.box4 {
+    width: 53.86px;
+    height: 45.19px;
+    color: #d8effe;
+    position: absolute;
+    top: 10pz;
+}
+
+.graph {
+    height: 445px;
+    background: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    margin-top: 24px;
+}
+
+.tableContainer {
+    width: 100%;
+    height: 445px;
+    display: flex;
+    margin-top: 24px;
+    gap: 32px;
+}
+
+.tableData {
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: space-between;
+}
+
+.headerText {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.money {
+    display: flex;
+    width: 100%;
+    height: 261px;
+    margin-top: 24px;
+    gap: 18px;
+}
+
+.moneyData {
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  th, td {
+    text-align: center;
+  }
+  th {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+  }
+  thead {
+    background: #0099FB;
+    border: 1px solid #0099FB;
+  }
+  td {
+    text-align: center;
+  }
+tr {
+    height: 42px;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+}
+
+.viewMore {
+background: #0099FB;
+border: 1px solid #D3D3D3;
+border-radius: 5px;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+color: #FFFFFF;
+padding: 6px 10px;
+cursor: pointer;
+}
+
+.rightIcon {
+    width: 16px;
+    height: 16px;
+    margin: -3px 5px;
+}
