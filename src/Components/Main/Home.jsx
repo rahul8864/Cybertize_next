@@ -8,6 +8,10 @@ import epxortImg from '../../assets/import-1@2x.png';
 import skyIcon from '../../assets/sky-1@2x.png';
 import userIcon from '../../assets/user-16-1@2x.png';
 import rightIcon from '../../assets/rightarrow-11-1@2x.png';
+import coin from '../../assets/2953383-1@2x.png';
+import week from '../../assets/nextweek-1@2x.png';
+import ruppe from '../../assets/rupeeindian-1@2x.png';
+
 
 export default function Home() {
     const objRE = [
@@ -38,6 +42,20 @@ export default function Home() {
             {id: 5, name: "Ritika Raj", phone: 8437897586, date: "27th August"},
             {id: 6, name: "Ritika Raj", phone: 8437897586, date: "27th August"},
         ] },
+    ]
+
+    const priceData = [
+        {id: 1, price: "16,58,000", name: "Last Month Sales", reward: [
+            {id: 1, name: "Gold", value: 4, color: "rgba(231, 251, 0, 0.58)"}, 
+            {id: 2, name: "Platinum", value: 15, color: "rgba(238, 238, 238, 0.58)"}, 
+            {id: 3, name: "Titanium", value: 12, color: "#0099FB"}
+        ], icon: coin},
+        {id: 2, price: "20,00,000", name: "Upcoming Renewals", reward: [
+            {id: 1, name: "Gold", value: 4, color: "rgba(231, 251, 0, 0.58)"}, 
+            {id: 2, name: "Platinum", value: 15, color: "rgba(238, 238, 238, 0.58)"}, 
+            {id: 3, name: "Titanium", value: 12, color: "#0099FB"}
+        ], icon: week},
+        {id: 3, name: "Upcoming Renewal client"}
     ]
   return (
     <div className={styles.mainContainer}>
@@ -72,8 +90,17 @@ export default function Home() {
         <div className={styles.customer}>
             {obj.map(obj => (
                 <div className={styles.box} key={obj.id}>
-                <div className={styles.box3} style={{ background: obj.color }}></div>
-                <div className={styles.box4}></div>
+                    <div className={styles.box4} style={{ background: obj.color }}>
+                    <div className={styles.contentText}>
+                        <div className={styles.iconUser}>
+                            <img src={userIcon} className={styles.userIcon} />
+                        </div>
+                        <div className={styles.userText}>
+                            <span className={styles.userTextHeader}>{obj.name}</span>
+                            <span className={styles.userTextValue}>{obj.value}</span>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             ))}
         </div>
@@ -116,8 +143,43 @@ export default function Home() {
             ))}
         </div>
         <div className={styles.money}>
-            {[1,2,3].map(obj => (
-                <div className={styles.moneyData}></div>
+            {priceData.map(obj => (
+                <>
+                {obj.price !== undefined ? (
+                    <div className={styles.moneyData} key={obj.id}>
+                        <div className={styles.moneySide}>
+                            <div className={styles.moneyContainer}>
+                                <div className={styles.moneyContainerFirst}>
+                                    <img src={ruppe} className={styles.ruppeIcon}/>
+                                    <div className={styles.valueTextPrice}>
+                                        <span className={styles.valueText}>{obj.price}</span>
+                                        <span className={styles.valueTextPrice}>{obj.name}</span>
+                                    </div>
+                                </div>
+                                <div className={styles.moneyContainerSecond}>
+                                    <div className={styles.moneyImage}>
+                                        <img src={obj.icon} className={styles.moneyIcon} />
+                                    </div>
+                                    <div className={styles.moneyText}>
+                                        {obj.reward?.map(item => (
+                                            <div className={styles.reward} key={item.id}>
+                                                <span className={styles.moneyValueName}>{item.name}</span>
+                                                <span className={styles.moneyValueText} style={{background: item.color}}>{item.value}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ) : (
+                <div className={styles.renewal}>
+                    <span className={styles.renewalHeader}>{obj.name}</span>
+                    <div></div>
+                    <span className={styles.renewalsee}>see all</span>
+                </div>
+                )}
+                </>
             ))}
         </div>
     </div>
