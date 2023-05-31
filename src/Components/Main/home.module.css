@@ -380,6 +380,7 @@ cursor: pointer;
 .reward {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .moneyValueName {
